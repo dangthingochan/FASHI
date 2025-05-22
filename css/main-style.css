@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("all.css");
+
+body {
+background-color: white; /* màu nền cho trang web*/
+color: #333; 
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+font-size: 16px;
+margin: 0}
+h1{ font-size: 40px}
+h2{ font-size: 35px}
+h3{ font-size: 30px}
+h4{ font-size: 25px}
+h5{ font-size: 20px}
+h6{ font-size: 15px}
+h1,h2,h3,h4,h5,h6, a,button{ 
+margin-bottom: 0; margin-top: 0;
+font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"}
+
+a{ color: black; text-decoration:none; font-weight: 700;}
+a:hover {
+color: #666;
+}
+
+/*----------------------- layout bo cuc web----small----------*/
+.container-fluid{width: 100%; padding-left: 16px; padding-right: 16px}
+/*------------- mobile first-----------------*/
+.container{width:95%; margin: auto}
+/*--------------size container cho tablet (ipad)-medium--------------*/
+@media (min-width:600px){.container{width:90%; margin: auto}}
+/*--------------size container cho pc 1000----large-----------*/
+@media (min-width:1000px){.container{width:80%; margin: auto}}
+/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%}
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]{padding: 15px;/*border: 1px solid blue*/}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row{display: flex; flex-wrap: wrap}
+.card{background-color: #e6e6e6; border-radius: 10px; overflow: hidden}
+.card-body{padding: 16px}
+
+/*---- style he thong mau chữ cho web---*/
+.text-p{ color: #92b9ad}
+.text-s{ color:#5fa7bb}
+.text-l{ color: #DDDDDD}
+.text-d{color: #323232}
+/*---- style he thong mau nền background cho web---*/
+.bg-primary { background-color: #92b9ad}
+.bg-secondary { background-color:#05916F }
+.bg-light{background-color:#DDDDDD}
+.bg-dark {background-color:#323232}
+/*--- style he thong mau cho nút button---*/
+.btn-primary{background-color:black; color: white; padding: 12px 24px; border-radius: 4px; font-weight: bold}
+.btn-primary:hover{background-color: white; color: black}
+.btn-secondary{ background-color: white; color: black; padding: 12px 24px; border-radius: 4px}
+.btn-secondary:hover{background-color: black; color: white}
+/*--- style cho menu can ban chi dung duoc tai pc---*/
+ul.menu{display: flex; padding: 0; list-style: none; justify-content: flex-start}
+ul.menu li a{padding: 10px 16px; color: #333; margin: 2px; letter-spacing: 0.08rem; display: block}
+ul.menu li a:hover{background-color:deeppink; border-bottom: 2px solid #666; color: pink}
+ul.menu li{position: relative}
+.banner{position: relative; overflow: hidden}
+.banner-ct{padding: 20px; width: 40%; position: absolute; right: 50%; top: 40%}
+.banner-caption{padding: 20px; width: 40%; position: absolute; left: 60%; top: 30%}
+.banner .col-4{position: absolute; display: flex;flex-direction: column;justify-content: center; width: 33.33%;padding: 20px}
+.banner .col-8 img{border-radius: 20px; display: inline-block}
+.top-bar{width: 100%; background-color: #92b9ad; color: black; padding: 5px 10px;font-size: 15px;}
+.text-center{text-align: center}
+.text-right{text-align:right}
+.text-justify{text-align: justify}
+.text-left{text-align: left}
+.border-bottom{border-bottom: 1px solid #666}/*đường viền*/
+/*-- các cột nếu cần flex thì goi d-flex*/
+.d-flex{ display: flex}
+/*canh đẩy chiều dọc cho các box trong flex*/
+.align-items-center{align-items: center}
+.align-items-end{align-items: flex-end}
+/*canh đẩy chiều ngang cho các box trong flex*/
+.justify-center{justify-content: center}
+.justify-between{justify-content: space-between}
+.justify-end{justify-content: flex-end}
+.justify-start{justify-content: flex-start}
+
+.navbar{display: flex; justify-content: space-between; align-items: center; background: #92b9ad; position: sticky; top: 0; z-index: 999}
+.navbar-left{justify-content: flex-start}
+.navbar-right{justify-content: flex-end}
+.navbar-center{justify-content: center}
+.navbar-left, .navbar-right, .navbar-center{flex: 1; display: flex; align-items: center}
+.logo{font-size: 25px; font-weight: bold}
+.navbar.logo{font-size: 2rem}
+.navbar.menu{max-width: 40%; boder: 1px solid blue}
+.navbar ul{display: flex; list-style: none; margin: 0; padding:0;}
+.navbar ul li{position: relative;}
+.navbar ul li a{padding: 10px 20px; font-weight: 600;}
+.navbar ul li a:hover{border-bottom: 2px solid black; color: #434343}
+
+.ss-icon{display: flex; gap: 25px; padding: 10px 20px}
+.ss-icon a{font-size: 20px; color: black; text-decoration: none}
+.my-100{margin-top: 100px; margin-bottom: 100px}
+.my-50{margin-top: 50px; margin-bottom: 50px}
+.p-0{padding: 0}
+.p-10{ padding: 10px}
+.mx-auto{ margin-left: auto; margin-right: auto}
+.ml-auto{ margin-left: auto}
+.mr-auto{ margin-right: auto}
+.py-0{padding-bottom: 0}
+.py-100{padding-top: 100px; padding-bottom: 100px}
+.py-50{padding-top: 50px; padding-bottom: 50px}
+#danhmuc .anh-dm{position: relative; overflow: hidden; border-radius: 20px}
+#danhmuc .anh-dm:hover>img{transform: scale(1.2)}
+#danhmuc .caption{position: absolute; left: 0; top: 45%; width: 100%; display: flex; justify-content: center}
+#danhmuc .caption h5{padding: 12px 24px}
+#danhmuc img{transition: all 1s}
+
+#latest-news .anh{position: relative; overflow: hidden; border-radius: 20px; margin-bottom: 20px; height: 200px}
+#latest-news .anh:hover>img{transform: scale(1.2)}
+#latest-news img{transition: all 1s}
+
+#new-clt .card{position: relative; overflow: hidden}
+#new-clt .left-box{position: absolute; left: 5px; top: 5px; background: #000; color: #fff; padding: 5px 15px; font-size: 14px}
+#new-clt .right-box{position: absolute; right: -100px; top: 10px; border: 1px solid #d00; transition: all 0.5s}
+#new-clt .card:hover>.right-box{right:10px}
+#new-clt .right-box a{display: block; border: 1px solid #333; border-radius: 50%; padding: 10px; margin: 5px}
+.d-nonw{display: flex}
+.container-fluid-img-0{padding:0; margin:0; display: block}
+.text-warning{color:#F7AC00}
+.text-old{color: #272727; text-decoration: line-through}
+.text-new{color: black; font-weight: bold}
+.text-stroke{-webkit-text-stroke: 2px #F7AC00; color: transparent;}
+#camnhan .content{margin-top:70px; position: relative; padding-top: 50px; text-align: center; background-color:#DFFBF2}
+#camnhan .avatar{position: absolute; border-radius: 50%; left: 40%; top: -50px; padding: 0; background: white}
+.w100-h100{width: 100; height: 100; box-shadow: 0 0 5px rgba(0,0,0,0,4)}
+.border-20px{border-radius: 20px}
+#best-seller .card{position: relative; overflow: hidden}
+#best-seller .left-box{position: absolute; left: 5px; top: 5px; background: #000; color: #fff; padding: 5px 15px; font-size: 14px}
+#best-seller .right-box{position: absolute; right: -100px; top: 10px; border: 1px solid #d00; transition: all 0.5s}
+#best-seller .card:hover>.right-box{right:10px}
+#best-seller .right-box a{display: block; border: 1px solid #333; border-radius: 50%; padding: 10px; margin: 5px}
+.d-nonw{display: flex}
+#icon a img{
+padding: 20px}
+footer{background:#161616; color: white}
+footer p{color:#D1CECE}
+footer a{color:#D1CECE; font: normal}
